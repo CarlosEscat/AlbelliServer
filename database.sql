@@ -1,0 +1,8 @@
+CREATE DATABASE albelli;
+
+CREATE TABLE advertisements(
+  _id SERIAL PRIMARY KEY,
+  title VARCHAR(255),
+  valid_until DATE NOT NULL DEFAULT CURRENT_DATE,
+  link VARCHAR(255)
+);
